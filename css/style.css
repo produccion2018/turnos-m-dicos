@@ -1,0 +1,186 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo */
+#logo {
+    max-width: 150px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    border: 2px solid #00bcd4; /* Celeste */
+    border-radius: 8px;
+}
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00bcd4; /* Celeste */
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Campos de formulario */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #e0e0e0; /* Gris */
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #00bcd4; /* Celeste */
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #00bcd4; /* Celeste */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0097a7; /* Celeste más oscuro */
+    transform: scale(1.05);
+}
+
+/* Enlaces dentro de los formularios */
+span {
+    color: #00bcd4; /* Celeste */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+/* Calendario */
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#calendar th, #calendar td {
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+#calendar th {
+    background-color: #00bcd4; /* Celeste */
+    color: white;
+}
+
+#calendar td {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#calendar td:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+#calendar .green {
+    background-color: #4CAF50;
+}
+
+#calendar .red {
+    background-color: #f44336;
+    cursor: not-allowed;
+}
+
+/* Mensaje de turno agendado */
+#appointment-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #00bcd4; /* Celeste */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s forwards;
+}
+
+/* Animación de transición para el mensaje */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Diseño responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+}
