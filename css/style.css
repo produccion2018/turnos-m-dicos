@@ -22,7 +22,7 @@ body {
     max-width: 450px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px #0000001a;
     padding: 20px;
     text-align: center;
 }
@@ -34,7 +34,7 @@ body {
     height: 150px;
     margin-bottom: 20px;
     opacity: 0.8;
-    border: 2px solid #00bcd4; /* Celeste */
+    border: 2px solid #00bcd4; 
     border-radius: 8px;
 }
 
@@ -42,7 +42,7 @@ body {
 h1, h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #00bcd4; /* Celeste */
+    color: #00bcd4; 
     font-weight: 600;
 }
 
@@ -62,12 +62,12 @@ input, select {
     border-radius: 8px;
     font-size: 16px;
     color: #333;
-    background-color: #e0e0e0; /* Gris */
+    background-color: #e0e0e0; 
     transition: all 0.3s ease-in-out;
 }
 
 input:focus, select:focus {
-    border-color: #00bcd4; /* Celeste */
+    border-color: #00bcd4; 
     background-color: #ffffff;
     outline: none;
 }
@@ -76,7 +76,7 @@ input:focus, select:focus {
 button {
     width: 100%;
     padding: 14px;
-    background-color: #00bcd4; /* Celeste */
+    background-color: #00bcd4; 
     color: white;
     border: none;
     border-radius: 8px;
@@ -87,13 +87,13 @@ button {
 }
 
 button:hover {
-    background-color: #0097a7; /* Celeste más oscuro */
+    background-color: #0097a7; 
     transform: scale(1.05);
 }
 
 /* Enlaces dentro de los formularios */
 span {
-    color: #00bcd4; /* Celeste */
+    color: #00bcd4; 
     cursor: pointer;
     font-size: 14px;
 }
@@ -119,8 +119,8 @@ span:hover {
 }
 
 #calendar th {
-    background-color: #00bcd4; /* Celeste */
-    color: white;
+    background-color: #00bcd4; 
+    color: #ffffff;
 }
 
 #calendar td {
@@ -151,11 +151,11 @@ span:hover {
     width: 100%;
     font-size: 18px;
     padding: 20px;
-    background-color: #00bcd4; /* Celeste */
+    background-color: #00bcd4; 
     color: white;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px #00000033;
     animation: slideUp 1s forwards;
 }
 
